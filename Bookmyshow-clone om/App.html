@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<style>
+
+    /* Style the main section */
+.sc-qswwm9-0 {
+  background-color: #262626;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style the image container */
+.sc-qswwm9-1 {
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Style the image */
+.sc-qswwm9-1 .sc-qswwm9-6 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Style the trailer icon */
+.sc-qswwm9-1 .sc-qswwm9-6 svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Style the movie title */
+.sc-qswwm9-6 {
+  margin-top: 10px;
+}
+
+/* Style the section with interested users */
+.sc-meewg8-0 {
+  margin-top: 20px;
+}
+
+/* Style the interested users icon */
+.sc-meewg8-3 svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Style the interested users count */
+.sc-meewg8-1 .sc-15uprjp-1 {
+  font-weight: bold;
+}
+
+/* Style the interested button */
+.sc-meewg8-1 button {
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sc-meewg8-1 button:hover {
+  background-color: #ff5722;
+}
+
+/* Style the duration and genres */
+.sc-2k6tnd-0 {
+  margin-top: 20px;
+}
+
+/* Style the duration and genres text */
+.sc-2k6tnd-1 {
+  font-size: 14px;
+}
+
+/* Style the book tickets button */
+.sc-11ze7wi-1 button {
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sc-11ze7wi-1 button:hover {
+  background-color: #ff5722;
+}
+
+/* Style the share section */
+.sc-1vaplep-0 {
+  margin-top: 20px;
+}
+
+/* Style the share icon */
+.sc-1vaplep-0 svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Style the main section */
+.sc-1ruosie-0 {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style the container */
+.sc-1ruosie-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the movie title */
+.sc-1ruosie-3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style the interested users section */
+.sc-1ruosie-4 {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the interested users icon */
+.imuSDo svg {
+  fill: #ff4500;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Style the interested users count */
+.sc-15uprjp-1 {
+  font-weight: bold;
+}
+
+/* Style the book tickets button */
+.sc-11ze7wi-1 button {
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sc-11ze7wi-1 button:hover {
+  background-color: #ff5722;
+}
+
+/* Style the main section */
+#component-1 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Style the section container */
+.sc-o4g232-0 {
+  margin-bottom: 20px;
+}
+
+/* Style the section title */
+.sc-o4g232-2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the section content */
+.sc-o4g232-3 {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Style the main section */
+#component-1 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Style the section container */
+.sc-o4g232-0 {
+  margin-bottom: 20px;
+}
+
+/* Style the section title */
+.sc-o4g232-2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the section content */
+.sc-o4g232-3 {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Style the main section */
+#component-5 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Style the section container */
+.sc-tesakv-0 {
+  margin-bottom: 20px;
+}
+
+/* Style the section title */
+.sc-tesakv-3 .sc-8zwcys-3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the crew member container */
+.sc-tesakv-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style the crew member */
+.sc-tesakv-1 a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 120px;
+}
+
+/* Style the crew member image */
+.sc-tesakv-1 img {
+  border-radius: 60px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style the crew member name */
+.sc-tesakv-1 .sc-17p4id8-1 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style the crew member role */
+.sc-tesakv-1 .sc-17p4id8-2 {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hover effect for crew member image */
+.sc-tesakv-1 a:hover img {
+  opacity: 0.7;
+}
+
+/* Style the main section */
+#component-9 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Style the section container */
+.sc-tesakv-0 {
+  margin-bottom: 20px;
+}
+
+/* Style the section title */
+.sc-tesakv-3 .sc-8zwcys-3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the "View All" link */
+.sc-tesakv-3 .sc-8zwcys-5 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sc-tesakv-3 .sc-8zwcys-5 svg {
+  margin-left: 5px;
+}
+
+/* Style the report content container */
+.sc-1nwjmv7-0 {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the report content text */
+.sc-1nwjmv7-2 {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Style the chevron icon */
+.sc-1nwjmv7-3 svg {
+  fill: #666; /* Adjust color as needed */
+}
+
+
+/* Style the outer section container */
+.sc-1r019bk-0 {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+/* Style the inner div container */
+.sc-1r019bk-1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the ad unit section */
+.sc-qv6sah-0 {
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /* Adjust max-width as needed */
+  border: 1px solid #ccc; /* Add border style */
+  border-radius: 8px; /* Add border radius */
+  padding: 20px; /* Add padding */
+  background-color: #f8f8f8; /* Add background color */
+}
+
+</style>
+<body>
+
+    <div class="sc-11q8erw-0 eHlJpW">
+        <section class="sc-qswwm9-0 fWeSiX">
+            <div class="sc-qswwm9-1 hhpXm"
+                style="background-image: linear-gradient(90deg, rgb(26, 26, 26) 24.97%, rgb(26, 26, 26) 38.3%, rgba(26, 26, 26, 0.04) 97.47%, rgb(26, 26, 26) 100%), url(&quot;https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/srikanth-et00354108-1712743850.jpg&quot;);">
+                <div class="sc-qswwm9-2 kSSnur">
+                    <div class="sc-qswwm9-4 brstsF">
+                        <section class="sc-bsek5f-0 hxpocV">
+                            <div type="vertical" class="sc-echj48-0 bGEZCd">
+                                <div class="sc-echj48-6 kUURKV"
+                                    style="border-radius: 16px 16px 0px 0px; object-fit: cover;"><img
+                                        src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/srikanth-et00354108-1712743850.jpg"
+                                         style="cursor: pointer;" width="100%" height="100%" class="sc-echj48-5 hoyqAn"
+                                        style="border-radius: 16px 16px 0px 0px; object-fit: cover;"></div>
+                                <div class="sc-xta4k3-0 SuaFt"><svg width="13" height="13">
+                                        <use href="/chunks/icons/synopsis-icons-35023058.svg#icon-play-no-bg"></use>
+                                    </svg><span>Trailer</span></div>
+                            </div>
+                            <section type="vertical" color="#000000" class="sc-bsek5f-1 fGbICE">
+                                <div class="sc-bsek5f-5 ePqEqS"><span color="#FFFFFF"
+                                        class="sc-bsek5f-4 hnDFhW">Releasing on 10 May, 2024</span>&nbsp;</div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="sc-qswwm9-5 ghYvew">
+                        <h1 class="sc-qswwm9-6 jevoyi">Srikanth</h1>
+                        <section class="sc-meewg8-0 hnmbhY">
+                            <div class="sc-meewg8-1 ksgpSJ">
+                                <div class="sc-meewg8-2 epHCjJ">
+                                    <div class="sc-meewg8-6 eKmtVQ">
+                                        <div class="sc-meewg8-3 cMXTsW">
+                                            <div class="sc-15uprjp-0 cGGfMq"><svg width="32" height="32">
+                                                    <use
+                                                        href="/chunks/icons/synopsis-icons-35023058.svg#icon-interested">
+                                                    </use>
+                                                </svg>
+                                                <div><span class="sc-15uprjp-1 gLGdGL">You</span><span
+                                                        class="sc-15uprjp-2 CSBlu">and 22.3K are interested</span></div>
+                                            </div><span class="sc-meewg8-5 daCGqI">We'll notify you when it
+                                                releases</span>
+                                        </div>
+                                    </div><button
+                                        class="sc-8f9mtj-0 sc-8f9mtj-1 sc-meewg8-8 sc-meewg8-10 bQSktP"><span>Undo</span></button>
+                                </div>
+                            </div>
+                            <div class="sc-meewg8-1 dFyGoi">
+                                <div class="sc-meewg8-2 epHCjJ">
+                                    <div class="sc-meewg8-3 bCRcFu">
+                                        <div class="sc-15uprjp-0 cGGfMq"><svg width="32" height="32">
+                                                <use href="/chunks/icons/synopsis-icons-35023058.svg#icon-interested">
+                                                </use>
+                                            </svg>
+                                            <div><span class="sc-15uprjp-1 gLGdGL">22.3K </span><span
+                                                    class="sc-15uprjp-2 CSBlu">are interested</span></div>
+                                        </div><span class="sc-meewg8-4 jiiEQG"></span><span
+                                            class="sc-meewg8-5 daCGqI">Are you interested in watching this movie?</span>
+                                    </div><button class="sc-8f9mtj-0 sc-8f9mtj-1 sc-meewg8-8 kUUWLp"><span>I'm
+                                            interested</span></button>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="sc-2k6tnd-0 ehJgFO">
+                            <div class="sc-2k6tnd-1 kfhxuo">
+                                <div class="sc-2k6tnd-4 diGRHt"><a
+                                        href="https://in.bookmyshow.com/explore/2d-movies-chandigarh"
+                                        class="sc-2k6tnd-2 fizEby">2D</a></div>
+                                <div class="sc-2k6tnd-4 diGRHt"><a
+                                        href="https://in.bookmyshow.com/explore/hindi-movies-chandigarh"
+                                        class="sc-2k6tnd-2 fizEby">Hindi</a></div>
+                            </div>
+                            <div class="sc-2k6tnd-1 kfhxuo">2h 14m<span class="sc-2k6tnd-5 juHVhn"> • </span><a
+                                    href="https://in.bookmyshow.com/explore/biography-movies-chandigarh"
+                                    class="sc-2k6tnd-2 bHMPWI">Biography</a><span class="sc-2k6tnd-5 iYKkDH">,</span><a
+                                    href="https://in.bookmyshow.com/explore/drama-movies-chandigarh"
+                                    class="sc-2k6tnd-2 bHMPWI">Drama</a><span class="sc-2k6tnd-5 juHVhn"> • </span>U
+                            </div>
+                        </div>
+                        <div class="sc-qswwm9-8 goilWl">
+                            <div class="sc-11ze7wi-0 jvCNUR">
+                                <div id="page-cta-container" class="sc-11ze7wi-1 hqkgpW"><button
+                                        data-phase="postRelease" class="sc-8f9mtj-0 sc-8f9mtj-1 sc-1vmod7e-0 bGKFux">
+                                        <div class="sc-1vmod7e-2 hhYlrx"><span
+                                                style="font-weight: 500; font-size: 16px; color: rgb(255, 255, 255);">Book
+                                                tickets</span></div>
+                                    </button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-qswwm9-9 leOnIc">
+                        <section class="sc-1vaplep-0 gQbphg">
+                            <div class="sc-1vaplep-1 dONGdV">
+                                <div class="sc-1vaplep-3 fxYwyj"><svg width="32" height="32">
+                                        <use href="/chunks/icons/synopsis-icons-35023058.svg#icon-share"></use>
+                                    </svg></div>
+                                <div class="sc-1vaplep-2 kFwTbY">Share</div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-1ruosie-0 eFvMzv">
+            <div class="sc-1ruosie-1 hpQCnS">
+                <div class="sc-1ruosie-2 ewYiur">
+                    <div class="sc-1ruosie-3 fnhFXN">Srikanth</div>
+                    <div class="sc-1ruosie-4 kioNFR">
+                        <div class="sc-15uprjp-0 imuSDo"><svg width="20" height="20">
+                                <use href="/chunks/icons/synopsis-icons-35023058.svg#icon-interested"></use>
+                            </svg>
+                            <div><span class="sc-15uprjp-1 jWOPEg">22.3K </span><span class="sc-15uprjp-2 dKmqfP">are
+                                    interested</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-11ze7wi-0 jvCNUR">
+                    <div id="page-cta-container" class="sc-11ze7wi-1 hqkgpW"><button data-phase="postRelease"
+                            class="sc-8f9mtj-0 sc-8f9mtj-1 sc-1vmod7e-0 bGKFux">
+                            <div class="sc-1vmod7e-2 hhYlrx"><span
+                                    style="font-weight: 500; font-size: 16px; color: rgb(255, 255, 255);">Book
+                                    tickets</span></div>
+                        </button></div>
+                </div>
+            </div>
+        </section>
+        <div class="sc-11q8erw-1 fbAayT">
+            <div class="sc-11q8erw-2 fDbuih">
+                <section id="component-1">
+                    <section class="sc-o4g232-0 jCydZa"><span class="sc-o4g232-1 fegzLx">
+                            <h4 class="sc-o4g232-2 fdvlVN">About the movie</h4>
+                            <div class="sc-o4g232-3 eAlXok"><span>In a world with odds stacked against him in every step
+                                    of the way, Srikanth defies norms, blazing a trail from rural India to becoming the
+                                    first visually impaired student at MIT. <br><br>As he builds Bollant Industries, his
+                                    success brings challenges for which he would not only chase personal dreams but
+                                    safeguard a shared future for the ones just like him. This is the tale of an
+                                    entrepreneur`s triumph and sacrifice, both which he welcomed with open arms and a
+                                    smile.</span></div>
+                        </span></section>
+                </section>
+                <section id="component-4">
+                    <section class="sc-tesakv-0 jqQrNX">
+                        <div class="sc-8zwcys-1 bmsJTb">
+                            <div class="sc-8zwcys-0 jVIRfL">
+                                <h4 class="sc-8zwcys-3 fKGglL">Cast</h4>
+                            </div>
+                        </div>
+                        <div class="sc-tesakv-3 fqovru">
+                            <div data-slides-to-scroll="5" data-element-width="120" data-arrow-vertical-offset="56px"
+                                class="sc-tesakv-1 bRtPnO"><a
+                                    href="https://in.bookmyshow.com/person/rajkummar-rao/1043890"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Rajkummar Rao" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/rajkummar-rao-1043890-20-12-2017-03-34-28.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Rajkummar Rao</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">as Srikanth Bolla</h5>
+                                </a><a href="https://in.bookmyshow.com/person/alaya-f/2006134"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Alaya F" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/alaya-f-2006134-1672835082.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Alaya F</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">as Swathi</h5>
+                                </a><a href="https://in.bookmyshow.com/person/jyotika-sadanah/2887"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Jyotika Sadanah" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jyothika-sudhir-2887-1710135712.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Jyotika Sadanah</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">as Devika</h5>
+                                </a><a href="https://in.bookmyshow.com/person/sharad-kelkar/28800"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Sharad Kelkar" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sharad-kelkar-28800-24-03-2017-17-39-47.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Sharad Kelkar</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">as Ravi</h5>
+                                </a>
+                                <div class="sc-tesakv-2 WBPuN"></div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section id="component-5">
+                    <section class="sc-tesakv-0 jqQrNX">
+                        <div class="sc-8zwcys-1 bmsJTb">
+                            <div class="sc-8zwcys-0 jVIRfL">
+                                <h4 class="sc-8zwcys-3 fKGglL">Crew</h4>
+                            </div>
+                        </div>
+                        <div class="sc-tesakv-3 fqovru">
+                            <div data-slides-to-scroll="5" data-element-width="120" data-arrow-vertical-offset="56px"
+                                class="sc-tesakv-1 bRtPnO"><a
+                                    href="https://in.bookmyshow.com/person/tushar-hiranandani/2409"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Tushar Hiranandani" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/tushar-hiranandani-2409-24-03-2017-14-30-39.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Tushar Hiranandani</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">Director</h5>
+                                </a><a href="https://in.bookmyshow.com/person/bhushan-kumar/1075903"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Bhushan Kumar" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/bhushan-kumar-1075903-11-11-2016-05-08-19.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Bhushan Kumar</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">Producer</h5>
+                                </a><a href="https://in.bookmyshow.com/person/krishan-kumar/IEIN019780"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Krishan Kumar" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/krishan-kumar-iein019780-24-03-2017-17-35-37.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Krishan Kumar</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">Producer</h5>
+                                </a><a href="https://in.bookmyshow.com/person/jagdeep-sidhu/1074739"
+                                    class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Jagdeep Sidhu" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jagdeep-sidhu-1074739-24-03-2017-13-21-54.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Jagdeep Sidhu</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">Writer</h5>
+                                </a><a href="#" class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="Sumit Purohit" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/sumit-purohit-1046866-27-10-2020-02-05-44.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">Sumit Purohit</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">Writer</h5>
+                                </a><a href="#" class="sc-17p4id8-0 dwdBSG">
+                                    <div height="120px" width="120px" class="sc-eykeme-0 dgYKwN"
+                                        style="border-radius: 60px; background: none;">
+                                        <div class="sc-eykeme-2 jTJVdG" style="opacity: 0;"><svg width="70" height="70">
+                                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray"></use>
+                                            </svg></div><img alt="T-Series" width="120px" height="120px"
+                                            class="sc-eykeme-1 jrtRfk" style="border-radius: 60px; opacity: 1;"
+                                            src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/t-series-2034339-1707742580.jpg">
+                                    </div>
+                                    <h5 class="sc-17p4id8-1 btaScV">T-Series</h5>
+                                    <h5 class="sc-17p4id8-2 bhYGbD">Music</h5>
+                                </a>
+                                <div class="sc-tesakv-2 WBPuN"></div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section id="component-9">
+                    <section class="sc-tesakv-0 jqQrNX">
+                        <div class="sc-8zwcys-1 bmsJTb">
+                            <div class="sc-8zwcys-0 jVIRfL">
+                                <h4 class="sc-8zwcys-3 fKGglL">You might also like</h4>
+                            </div><a href="https://in.bookmyshow.com/explore/movies-chandigarh"
+                                class="sc-8zwcys-5 fVbTzo"><span>View All</span><svg width="22" height="22">
+                                    <use href="/chunks/icons/synopsis-icons-35023058.svg#icon-red-right-chevron"></use>
+                                </svg></a>
+                        </div>
+                        <div class="sc-tesakv-3 fqovru">
+                            <div class="sc-1vwkr8r-0 hiAXYZ">
+                                <div class="sc-1vwkr8r-1 llchYh"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="-1 -1 21 35">
+                                        <g fill="#FFFFFF" fill-rule="evenodd">
+                                            <path
+                                                d="M1.276 31.647a1.543 1.543 0 01.033-2.17l14.59-14.09a1.531 1.531 0 012.171.043c.59.61.566 1.592-.033 2.17L3.447 31.69a1.531 1.531 0 01-2.17-.043z">
+                                            </path>
+                                            <path
+                                                d="M1.276 1.43A1.543 1.543 0 001.31 3.6L15.9 17.69a1.531 1.531 0 002.171-.043 1.543 1.543 0 00-.033-2.17L3.447 1.387a1.531 1.531 0 00-2.17.043z">
+                                            </path>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                            <div data-slides-to-scroll="3" data-element-width="222" data-arrow-vertical-offset="175px"
+                                class="sc-tesakv-1 hHmVha"><a
+                                    href="https://in.bookmyshow.com/chandigarh/movies/maidaan/ET00109952"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Maidaan" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">8.9/10 82.9K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Maidaan</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/madgaon-express/ET00341317"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Madgaon Express" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">8.6/10 44.2K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Madgaon Express</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/desh-ke-gaddar/ET00395020"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Desh Ke Gaddar" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">9.7/10 Early Ratings</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Desh Ke Gaddar</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/laapataa-ladies/ET00351955"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Laapataa Ladies" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">9.2/10 38.3K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Laapataa Ladies</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/kasoombo-hindi/ET00395805"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Kasoombo (Hindi)" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">8.5/10 1.6K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Kasoombo (Hindi)</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/main-ladega/ET00394336"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Main Ladega" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">8.8/10 1.1K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Main Ladega</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/do-aur-do-pyaar/ET00383986"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Do Aur Do Pyaar" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">7.3/10 5.4K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Do Aur Do Pyaar</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/the-fall-guy/ET00375399"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="The Fall Guy" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">8.2/10 5.3K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">The Fall Guy</span>
+                                </a><a href="https://in.bookmyshow.com/chandigarh/movies/crew/ET00344265"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Crew" width="222px" height="333px"
+                                                class="sc-eykeme-1 jrtRfk" style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">6.8/10 73.9K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Crew</span>
+                                </a><a
+                                    href="https://in.bookmyshow.com/chandigarh/movies/bade-miyan-chote-miyan/ET00322647"
+                                    class="sc-1ubwe2r-0 fFAgxY">
+                                    <section class="sc-1ubwe2r-2 eeSnss">
+                                        <div height="333px" width="222px" class="sc-eykeme-0 bVNKqF"
+                                            style="border-radius: 8px 8px 0px 0px;">
+                                            <div class="sc-eykeme-2 jTJVdG"><svg width="80" height="80">
+                                                    <use href="/chunks/icons/common-icons-19924f3b.svg#icon-bms-gray">
+                                                    </use>
+                                                </svg></div><img alt="Bade Miyan Chote Miyan" width="222px"
+                                                height="333px" class="sc-eykeme-1 jrtRfk"
+                                                style="border-radius: 8px 8px 0px 0px;">
+                                        </div>
+                                        <div class="sc-1ubwe2r-3 aFHyP"><img
+                                                src="https://in.bmscdn.com/moviemode/tvod/star-icon.png" height="20"
+                                                width="20" class="sc-1ubwe2r-5 locXjW"><span
+                                                class="sc-1ubwe2r-4 gcyyUS">5.8/10 71.5K Votes</span></div>
+                                    </section><span class="sc-1ubwe2r-10 fWOXyX">Bade Miyan Chote Miyan</span>
+                                </a>
+                                <div class="sc-tesakv-2 WBPuN"></div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <div class="sc-1nwjmv7-0 eYiQEq">
+                    <div class="sc-1nwjmv7-1 hAALqF"><span class="sc-1nwjmv7-2 blsTtR">Report content</span>
+                        <div class="sc-1nwjmv7-3 iVmftC"><svg width="12px" height="12px">
+                                <use href="/chunks/icons/common-icons-19924f3b.svg#icon-chevron-right-dark"></use>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+            <section class="sc-1r019bk-0 bsCvSS">
+                <div class="sc-1r019bk-1 iHLMwz">
+                    <section id="AD_MOVIE_SYNOPSIS_CARD" class="sc-qv6sah-0 fbYhn" data-adunit-id="movie_synopsis_web">
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
